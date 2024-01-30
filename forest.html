@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Forest protection form</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <h1 id="title">Forest Protection</h1>
+  <p id="description">Our organization has the purpose of protecting the environment and saving the ecosystem<p>
+    
+<form id="survey-form">
+  <legend>Please help us by filing out this form:</legend>
+  <img src="https://images.pexels.com/photos/784148/pexels-photo-784148.jpeg?cs=srgb&dl=pexels-molly-champion-784148.jpg&fm=jpg">
+<section class="sec-1">
+  <label for="name" id="name-label">Name: <input type="text" id="name" class="firts-inputs" placeholder="Enter full name" required/></label>
+
+  <label for="email" id="email-label">Email: <input type="email" id="email" class="firts-inputs" placeholder="example@email.com" required/></label>
+
+  <label for="number" id="number-label">Age (18 or older): <input type="number" id="number" min="18" max="120" class="firts-inputs" placeholder="18"></label>
+
+  <label for="dropdown">Region: </label>
+    <select id="dropdown">
+      <option value="NA">North America</option>
+      <option value="SA">South America</option>
+      <option value="EU">Europe</option>
+      <option value="AS">Asia</option>
+      <option value="AF">Africa</option>
+      <option value="OC">Oceania</option>
+    <select>
+</section>
+  <legend>Gender: </legend>
+    <label for="male"><input type="radio" name="gender" id="male" checked value="male">Male</label>
+    <label for="female"><input type="radio" name="gender" id="female" value="female">Female</label>
+    <label for="n/a"><input type="radio" name="gender" id="n/a" value="n/a">N/A</label>
+
+  <legend>Medical conditions: </legend>
+    <label for="heartC"><input type="checkbox" id="heartC" value="heart">Heart condition</label>
+    <label for="kneeC"><input type="checkbox" id="kneeC" value="knee">Knee condition</label>
+    <label for="lungC"><input type="checkbox" id="lungC" value="lung">Lung condition</label>
+    <label for="mentalD"><input type="checkbox" id="mentalD" value="mental">Mental disability</label>
+
+  <legend>Please enter your motivation for applying to our organization: </legend>
+    <textarea rows="6" cols="47" placeholder="I really love trees!..."></textarea>
+
+  <input type="submit" value="Submit" id="submit">
+
+</form>
+</html>
